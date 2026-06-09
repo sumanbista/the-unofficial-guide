@@ -1,0 +1,54 @@
+What If I Want to Switch Into CS After Admittance Into UC Berkeley?
+While there are no hard numbers, the general consensus amongst my peers and me in the Class of 2027 is that the chance of switching from another L&S major to CS once admitted to Berkeley is close to zero. Instead of meeting a 3.3 GPA cap, students must now go through a comprehensive, holistic evaluation that undergrads I’ve spoken to speculate may end up turning into another application process, similar to a “College Apps 2.0” or the Haas Business School’s application process, although exact details are unclear at the moment.
+
+Most seem to agree that it’s a better idea to just apply to CS in the first place on college applications, be fine with not pursuing CS at Berkeley if an applicant chooses not to put CS on their application, or attend another school where resources are more abundant if CS really is their passion and they don’t want to apply as a CS major.
+
+Another question applicants may have is: Can students still take CS classes, even if they’re not declared? Unfortunately, due to a lack of resources, only lower division CS classes are open to most majors. Upper div courses are, for the most part, solely reserved for CS/EECS majors (with the occasional Data Science reserved seat), so it’d be difficult, if not impossible, to complete the requirements for CS/EECS without being declared.
+
+REDDIT QUESTION:
+ADMITTED TO BERKELEY OFF THE WAITLIST!! (Can I switch Majors?)
+Waitlists/Deferrals
+Just got admitted to Berkeley off the Waitlist! Super stoked, definitely planning to attend...
+
+Admitted for Materials Science and Engineering in the Engineering School.
+
+Wanted to know what the process/ how hard it would be to change my major, either before fall 2023 starts or even after, to either computer science or into the Haas School of Business.
+
+If anyone has any insight or knowledge about this please let me know.
+
+Reddit Response: 
+For cs literally zero percent. Cs is a capped major meaning they will only accept students who indicated cs as their first choice during the admissions. So changing would be nearly impossible.
+
+Switching into CS is nearly impossible. In engineering school only Engineering Undeclared can switch into CS. But, maybe you can try to first switch into Engineering Undeclared? :
+
+Go if you want to stick with the major they gave you. Otherwise impossible to switch.
+
+Lots of comments here are wrong, I attend Berkeley and if you are in college of engineering (which you are) you can switch to eecs by obtaining a B+ average in two eecs courses, lots of engineering majors switch using “college of engineering backdoor”. Switching from any other major in L&S to cs or eecs is nearly impossible though with the new policy in place.
+
+For computer science, there is a “holistic” black-box process they’re rolling out.
+
+For electrical engineering and computer science, it’s a matter of getting into classes that would be hard to enroll in.
+
+Don’t listen to these people. It’s really easy for transfer internally into EECS into COE if you are alr in the COE. Since you are, you should be fine.
+
+
+How hard is it change to CS Major after getting accepted to L&S?
+CS/EECS
+I am an international student applying to berkeley for undergrad. I am planning to apply for Maths in L&S and then switch to CS Major. But, when I checked on their website, it shows that the requirements have changed and it has become yet more difficult to change the major, can anyone pls clarify on the requirements and the chances ?
+
+near 0 apply for the major you actually want
+
+Dude, apply for CS. It’s because of people like you that the policy was changed.
+
+The website spells it out.
+
+Admission into L&S: Those who already know as high school students that they want a high-demand major should select that major on their UC Berkeley admissions application. If admitted to L&S, they will be guaranteed a spot in the major they selected, subject to completing the prerequisites, maintaining good academic standing in L&S, and filing a declaration form.
+
+Changing to a high-demand major after arriving at L&S*: For students who did not select a high-demand major on their UC Berkeley admissions application, the process for declaring a high-demand major will be through a comprehensive review, rather than a minimum GPA requirement only. Students will have one opportunity to apply for a high-demand major, and will be required to have an alternate plan to declare a non-high-demand major as a back-up. *The opportunities for being admitted to a high-demand major after enrollment are extremely limited, and applying via comprehensive review does not guarantee a spot in a high-demand major. If you have an interest in a high-demand major in L&S, we strongly encourage you to select that high-demand major on your UC Berkeley application. If you opt to change to a high-demand major in the College of Letters & Science after being admitted to Berkeley, you will be required to have an alternate plan to declare a non-high-demand major as a back-up.
+
+
+I think based on the updated policy, class of 2027 is the last class that is able to transfer to cs major thru high demand. Every class after will not be able to transfer.
+
+
+
+

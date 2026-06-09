@@ -1,0 +1,50 @@
+Concerns about being CS at Berkeley
+CS/EECS
+Hey, I’m a new admit at UC Berkeley, this has always been my dream school and I am really excited to study CS as it’s always been a passion of mine. Recently I saw a post about someone who studied over 900 hours (some people say in the thousands) for CS70. I am extremely worried about the course load at UC Berkeley and the toll it will have on my mental health and social well being. Do you guys have any input on the rigor especially CS70. When I was looking at the course pages I noticed CS70 was worth 4 units and with some other classes I could probably get 12 units but L&S requires 13 units to be a full time student and that means I may need to take 15 or 16 units. How do people who study 900+ hours for a single course still have time for their other 11 to 12 units?Any advice would be appreciated
+
+Thread Responses: 
+Nearly nobody spends that much time on a class tbh. If it makes you any more comfortable, I retook calculus one and dropped calculus 2 at Berkeley, and got through cs70 with a B+ (even though it was a struggle and I put a lot of time into it, it was nowhere near 900 hours). It will be difficult but definitely doable, embrace the challenge!
+
+
+900 hours comes out to 50+ hours a week; that is a far out anomaly. most people put in like 10-15, 20 would be much higher than average.
+
+Yeah other comments are right, 50h/week studying is not common especially on a single class. There was a CS piazza post a while back about workload, on average people reported spending 25-40 hours per week on classwork (total) which leaves a good amount of time for other extracurriculars like teaching/research. There will always be exceptions, and of course there's prof. Sahai saying his expectation that people should study 80h/week, but it's certainly not a given when studying CS. Another thing to note, units are not very useful when considering workload and the "other 11 to 12" units could end up being even less work than the 4 cs70 units. In my experience a CS "unit" is around twice as much work as a non-cs unit, so there are plenty of ways of meeting the unit req without a super heavy schedule, even if one class is particularly bad.
+
+You took a risk declaring EECS upon admission, since there arent any alternative majors allowed on UCB app. It paid off. Hmm. Now it seems that you and other EECS posting here are skating by, unmotivated to truly stretch yourselves and succeed in CS/EECS classes w/ much more than just a minimum GPA, while undeclared L&S CS are working w/ ferocity to prove themselves worthy to be accepted into basically the same program. TY for helping suppress the mean.
+
+
+Most people don’t spend 900+ hours on a class like that. You can view that person as someone with dedication or poor study habits, up to you. Personally, I respect them for putting in that much work into the class but I would never go to that extent myself. I also took cs70 this past semester and while I did struggle with it, I ultimately just tried my best while making sure not to beat myself up over not understanding every small detail of the class. If you do well in the other prereqs you have more wiggle room when it comes the grade you need in cs70.
+
+I think planning your schedule and not overloading yourself with unnecessary responsibilities is a good way to ensure that you’re able to declare. One huge piece of advice, that may be pretty obvious, is to prioritize your prereqs if you want to declare. Something I didn’t know coming into Berkeley is that there’s CSM sections for most cs classes which can be taken for a unit. In these sections you’ll review and practice the topics in the cs/eecs class you’re taking. Additionally there’s a CS Scholars program which helps students in underrepresented communities by providing additional resources and support. I believe they offer a 2 unit seminar when you take 61A. You may also end up finding out that you don’t need to pad your schedule with these easy units if you’re one of those cracked freshmen, but these were some of the things that helped me :
+
+If any class is taking you more than 20 hours a week consistently that area is likely not for you. CS isn't for everyone and some people need to put in more time but you have to find a balance between enjoyment and skill. 70 is hard but if you have good time management and use the abundant resources available it is a very manageable class.
+
+I agree with this but 70 is simply an exception in my personal opinion. I simply put over 35 hrs per week this sem for 70 and will still end up some sort of B. This is coming from someone with no cs and no competitive math experience before college.
+
+eh, I can easily see really smart people spending more than 20h on 162, 70, 170, 126, 189, etc if they're aiming for a safe A
+
+That person is either A) Bullshitting/Exaggerating, B) Comically overpreparing/aiming for an A+ for no reason, or C) Having a mental health episode that is preventing them from effectively learning. Most likely a combination of all three lmao
+
+It is comically unnecessary, excessive, and unhealthy to "study for over 9000 hours" or w/e, even for hard classes like CS70. The average student puts in the standard in-class hours * 4 studying, and the average student gets a B+ in that class. Don't let one post from some psycho on reddit dissuade you from doing what you want to do.
+
+I think mainly A or C, they mentioned getting B/B- tier grades on discord.
+
+f you want to be a great CS with a Berkeley’s title, you are going to work very hard. But it totally worths it :
+
+Here’s my take - I was quite lazy, didn’t spend that much time on classes but was a slightly above average student my time here, mainly because as time went on, I knew what to do to get a decent grade. However when I was taking CS 70 as a freshman, I worked harder in that class than any other class before and to some extent after. But still nowhere close to 900 hours in a semester. I did average 12-15 hours per week mainly for psets, and there admittedly was one week that I said fuck it, I’m not doing the pset, which may or may not have hurt me since it was the week right after the first MT. For the week before the 2 MTs, maybe an additional 15 hours, and for RRR and for the 4.5 days leading up to the Final probably a total of 50 hours. And I did study right thru Spring Break as there was a MT2 right afterwards which I fucked up anyhow. So if I added up everything it was closer to 250-300 hours? for the semester.
+
+I probably did wind up spending more time on 61C though, and on a couple of the 61B projects I’m guessing I did some 80 hour weeks. But those were more like “seeking perfection” hours as opposed to the grinding hours of 70, so not really as stressful, kinda hard to explain.
+
+Don’t take it with two other technicals and you are fine. Just remember that in a course like 70 you can study 1000 hours and still do bad or study on average and get an A. For a conceptual class like 70 it is more important to understand what’s going than blatantly doing exam practice while looking at solutions, which is the hard part of the course in my opinion because the content is very difficult but it doesn’t require anywhere near 900 hours to understand the concepts well enough to get in the A range.
+
+I took CS70 over the summer during high school. It was hard but doable because everyone else taking it is in the same situation. I got an A and it was hella hard, but it wasn’t anywhere near 50 hours a week, more like 20 or 30 as an absolute max
+
+I took CS70 this semester and will say that although I do know several people who did spend that much time on it, most didn’t (and were just very stressed). Most other classes will be hard but won’t take as much time. The most helpful thing for CS70 is familiarity with competitive math. CS70 is usually taken fall of sophomore year, so you could probably take an AoPs course on number theory and combinatorics in the summer beforehand and will have a big help from that if you are really worried about it. Biggest suggestion is to watch some lectures and see how you feel. If they scare you, maybe do some pre-preparation. Apart from CS70 all of your CS classes will be hard but not killer. And for me and like half of my friends, CS70 was actually less of a workload. Your exposure to “mathematical maturity” and aptitude for mathy proof stuff in general really affects how much you have to study for CS70, and those who struggle in it should not feel bad about it because honestly it’s a math class and while it’s nice to have it does not determine your capability as a coder (I’m a double math and CS major and loved CS70, so don’t come for me because I think it isn’t that important in the long run) CS61A and CS61B are far more important to helping you be a good coder.
+
+TLDR: for some it is harder and you should keep that in mind and not assume you won’t have a hard time with it. At the same time, it doesn’t have that impact on everyone and I suggest not panicking, but gauging your fear of it once you’ve taken CS61A and gotten a grasp of the difficulty of classes at Berkeley. There are ways to prepare if you feel that you won’t be ready. If you DO find CS70 to be very difficult don’t take it personally. You are not a math major.
+
+I've been a CS major at Cal for 3 years and this is the first time I've heard of someone doing that much work for a class. 20 hours a week is already excessive imo. The amount of time I spend on my CS classes ranges from 4-10 hours per week on average and I consistently get grades in the B range.
+
+There will be classes that are grueling for you and others that are a joy. Read the syllabus and work with your study habits
+
+If you struggle a LOT in CS61A, consider jumping to another major, but otherwise I can guarantee you can avoid studying 900 hours for a class

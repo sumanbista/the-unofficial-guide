@@ -9,27 +9,31 @@
 
 ## Domain
 
-<!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+**Chosen Domain**: Student reviews and unofficial advice about CS/EECS courses and professors at UC Berkeley.
 
+This system covers real student-generated knowledge about UC Berkeley’s Computer Science (CS) program — including professor teaching styles, course difficulty, workload, workload management tips, major declaration/switching experiences, and survival advice for classes like CS61A, CS61B, CS70, CS170, etc.
+
+**Why this knowledge is valuable**: Official course catalogs and university websites only provide dry descriptions (topics covered, prerequisites). They don’t tell students which professors are engaging vs. confusing, how brutal the workload actually is, whether a class is curved harshly, or how to succeed with no prior programming experience. This “unofficial” knowledge helps students make better scheduling decisions, reduce stress, and improve their academic experience.
+
+**Why it’s hard to find**: High-quality student insights are scattered across old Reddit threads (r/berkeley), RateMyProfessors pages, Medium posts, and Discord servers. They’re hard to search, often outdated, and mixed with noise. A RAG system makes this collective student wisdom searchable and reliable.
 ---
 
 ## Documents
 
-<!-- List your specific sources: URLs, subreddit names, forum threads, or file descriptions.
-     Aim for at least 10 sources that together cover different subtopics or perspectives within your domain. -->
-
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Rate My Professors|Best Rated RMP Professors|documets/best_rating_rmpt.txt|
+| 2 | Rate My Professors| Low-rated CS professors and common complaints |documets/worst_rating_rmp.txt |
+| 3 | Reddit|CS70 Professor Rao|documets/cs_70_professor_rao.txt|
+| 4 |Reddit|CS Classes Ranked by Difficulty |documets/cs_classes_ranked_difficulty.txt|
+| 5 |Medium |CS vs EECS |documets/cs_vs_eecs.txt |
+| 6 |Reddit| No Programming Experience |documets/no_programming_experience.txt|
+| 7 |Reddit|Concerns about being CS at Berkeley |documets/concerns_cs_at_berkley|
+| 8 | Medium | Switching Into CS | documets/switch_into_cs.txt |
+| 9 | Reddit | Switching Into CS | documets/switch_into_cs.txt|
+| 10| Reddit | Switching Into CS |documets/switch_into_cs.txt|
+| 11 |Reddit|CS Classes Ranked by Difficulty |documets/cs_classes_ranked_difficulty.txt|
+| 12 |Reddit|How Hard and Time Consuming is CS at Berkeley |how_hard_cs.txt|
 
 ---
 

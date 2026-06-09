@@ -1,0 +1,93 @@
+Berkeley CS Classes Ranked By Difficulty
+CS/EECS
+Disclaimer: I only ranked classes I have taken or taught in some way before. Classes may have changed significantly since I took them. I took some of these classes many years ago so I might not remember well enough to have an exact ranking. Also my personal opinions, strengths, and weaknesses influence this.
+
+CS10: Block-based coding class for people who have never done any programming before
+
+Data 8: Weeder class but not I don't think it's very difficult as long as you do the work
+
+Data/CS100: Data 8 without the training wheels
+
+CS188: Read pseudocode and write Python. Homework and exam problems are not that bad either. (Don't take this class though)
+
+CS164 (OCaml version): Basically 61A but they are not trying to weed you out of the major.
+
+EECS106A: Decent amount of work but easy class
+
+CS186: Short Java projects and weekly vitamins. Exams consist of boring IO problems
+
+CS161: Often the first upperdiv people take. A great class that isn't too difficult because it is a survey course.
+
+CS61B: Not that conceptually hard and assignments are not that long
+
+CS61C: This class was so much work. Very straightforward though.
+
+CS61A: Assignments and content are on the easier side but the brainteaser problems put this above 61B
+
+CS191: Dropped early on because it's not really an engineering class and I was bored. Not very time-consuming though.
+
+CS194-26: Dropped early. Hard for me because projects are too open-ended and class might be taught worse than even 16B.
+
+EECS16AB: Thought both classes were similar in difficulty. Lots of content, time consuming, annoying labs and homework. But exams and concepts are not that hard and honestly these classes are hard because of poor class structure and instruction.
+
+CS170: If 61B and 70 had a child, it would be this class. It makes sense that the difficulty is somewhere in the middle.
+
+EECS126: Took it during the strike and threw this class but felt very much like CS70.
+
+CS70: Depends on the student's mathematical maturity but CS70 with Rao is not that intensive, though problems are pretty hard.
+
+CS182: Taking right now and comparable to CS189
+
+CS189: I studied like hell and still struggled. This class is the gatekeeper of the ML research at Cal, so very tough.
+
+CS162: Each weekly homework assignment is the size of a project in a regular CS class. Projects were brutal. Exams were also kind of hard.
+
+Thread responses:
+
+EECS16b is way more challenging than 16a because it takes the problems with 16a and maximizes them.
+
+16b’s problems come down to four issues:
+
+You jump sporadically from topic to topic lecture by lecture, never staying in one area long enough to understand it properly.
+
+The notes are atrocious. At least 16a notes are somewhat concise to what the professor is going to lecture about, but not 16b. You may cover 4 different critical areas not covered in notes at all, leaving you to decipher lectures, camp office hours or spam Ed with questions that should be in the note that aren’t. Of course many classes have different emphasis on things depending who is teaching, but the problem lies in the fact there are too many topics covered to keep changing emphasis and deviating from notes or not updating the notes ever to cover said emphasis. At the very least, use the same symbols…
+
+The problems sets are math, and math requires practice, but you don’t get enough because the homework’s are focused on quickly trying to apply what was covered in discussion/lecture. There is no time to practice anything when you’re trying to shove 2 semesters worth of content into one semester.
+
+The workload: Pre-lab assignment, lab report for the lab, the lab itself, and 5-7 page homework… each week. It’s bad enough trying to read one 13 page note that is incredibly convoluted since it barely follows the lecturer, and uses different terminology, but throwing another 5-7 page reading in there too?
+
+I do enjoy the class oddly enough, but I do not enjoy not having time to learn anything because of how much is crammed into this course.
+
+EECS MS 2020, CS BA 2019
+
+I wish I had a list like this when I took cs189 and cs162 together during my last semester at Cal, good times
+
+They warn you right in the CS upper division requirements not to take those 2 together.
+
+126 is by far the hardest imo. Final averages were around 15-20% the year I took it
+
+I don’t think Data 8 is a weeder class tbh, I know some of the TAs and personally talked to the lecturers and it’s just more of a class for introduction to Data Science. I don’t think it’s difficult hard enough to be a weeder class and you just need to be on top of your work
+
+164 should be way higher. I’m taking it rn and these homeworks are taking several hours to complete and are pretty hard if you aren’t super well-versed with writing OCaml and C and assembly (basically everyone). it’s def harder than 61abc and 186 161 imo
+
+^^ i'm surprised it has a reputation for being easier, i'm really struggling despite doing my best to stay on top of it because the languages used (ocaml and x86) make the assignments so much harder than the concepts themselves. definitely harder than 61abc
+
+why is data 100 considered such an easy class it 100% is not a cake walk and definitely not easier than 161/16a/188
+
+no way you’re putting all the math upper divs as easier than Math 54 or even cs 70 lol that’s wild
+
+I’m taking 126 and can confirm it’s hard as hell
+
+EE 126 That course stripped away any thoughts I had for applying to grad school.
+
+I am taking EECS16a and would like to take Math 54 instead of EECS16b in the future. How should I prepare (circuits-wise) so that I won't be too behind for classes like EECS C106a, EECS126, and EECS127 (or do I need to at all)? I heard that EECS upper divs don't check prerequisites so I should be able to enroll in EECS127 even if I didn't do EECS16b right?
+
+Also, I heard that although CS188 isn't applicable, it's interesting and can give you an understanding of math/fundamentals regarding AI. What are your opinions on this?
+
+106A, 126, and 127 don't have any circuits stuff and don't rely on eecs16b. You will definitely be able to enroll.
+
+CS188 does have nice parts and isn't bad if you need to get those 13 units (the pacman projects can be fun). However, all of the class is either not useful, self-studiable, not taught well, or not taught in depth. If math and AI fundamentals are what you are after, there are better classes out there.
+
+Hi, if I want to have a minor in CS at Cal what classes should I take throughout the years? I'm currently an incoming freshmen. (I have close to no experience in cs)
+
+CS70 is not harder than EECS126

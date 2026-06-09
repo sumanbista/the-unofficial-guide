@@ -1,0 +1,57 @@
+Thread Title: What percent of students enter Berkeley (CS/EECS intended) without programming experience? How do they fare?
+
+Thread Response:
+no programming in/before high school, did just fine in L&S CS (declared), now going into faang - doable, and i didn’t have to no-life it, although i did have to work extra hard through 61a/61b/70
+
+did you work on extra projects besides those required for your classes?
+i did work on a project from my first internship which was at a startup that i have on my resume - otherwise i honestly have gitlet on there and enigma if i want to remove some of my nontechnical bullet points for a company
+
+
+I don’t know about the percentage, but it’s doable! As a datapoint, I come from a low income area/high school with 0 experience in CS or in anything with academic rigor comparable to Berkeley beforehand. I was still able to declare, get internships at FAANG/unicorn start ups, and am now working full time as a software engineer. It’s a hard battle but I truly believe anyone can do CS if they give it their all.
+
+I did this. I first took CS10 to test the waters and because it sounded fun. I really enjoyed it and was totally fine for 61a. I feel like this might be one of the least stressful and gentlest ways to ease into CS at Berkeley. Also loved taking a class with Dan Garcia. I feel like if I’d jumped right into the deep end with 61a I might not have been able to declare. I ended up getting a job at a faang as well.
+
+admittedly, it's an uphill battle and one that is not in your favor BUT i'm a big believer in the idea that if you want it bad enough, you'll make it happen. Just FYI, according to previous 61A prof, 15% of students with no prior experience received a B+ or higher in 61A (which imo is the grade at minimum you want in 61A).
+
+i didn't have any prior experience but i grinded my ass off, landed summer internship, and slated to work full-time at faang after grad.
+
+Realistically, not a huge percentage (and with the upcoming changes to admission, likely near 0%).
+
+That said, as someone who came in with no prior experience, I would really only say that I felt "behind" up until a month or so into 61A. After midterm 1 everyone is pretty much even.
+
+This makes sense for L&S, do you think this holds for EECS as well though? I heard they explicitly don’t value prior experience in CS over other ECs and Ik a good amnt of EECS students with NPE (could also be sampling bias cuz I only know what I’ve seen in OH or on class discords which prior experience people don’t need to go to)
+
+I guess in any case it’s similar but I remember hearing a nontrivial number cited for NPE in eecs in a town hall awhile back
+
+There's a hefty learning curve that comes with learning to code (61A style). I'm not sure how it's changed in past years, but when I took it, final grades were assigned on pure points. So, if you were impacted in the first midterm (possibly even the second midterm) your grade was lower as a result under the system I described. Also, you likely had to invest much more time to learn the material than those that knew python. This is normal in college to some degree, but it seems 61A offers experienced students a heightened chance of earning good marks.
+
+Of course having prior experience leads to getting more points and a better grade, but overall I would say the notion of starting without prior experience is not as crazy as it may seem.
+
+CS61A is gonna be kinda hard. A lot of people are gonna have an advantage over you just because they have seen this stuff before. If You can get through 61A it gets much easier and prior knowledge plays basically no factor at all. Just grind really hard in 61A.
+
+I can only speak for the lower division stuff. Came into college with no coding experience but with good mathematical maturity. Took Physics 77 first and aced the declaration requirements.
+
+Commenting as another datapoint the cs61a thing is true just a difference in algorithmic thinking ability probably but it evens out after the class
+
+Had no experience except visual programming (making games in Scratch) in/before high school. Am now a grad student in CS lol.
+
+From my experience tutoring 61A students those with prior programming experience had little to no advantage over those with prior experience.
+
+If you can’t be bothered to learn the basics of programming the summer before college it’s on you tbh.
+
+I didn’t have any experience until the summer before college and did just fine. IMO how well you do in classes (and even in a swe job after a couple months of adjustment / experience) has more to do with your ability in math than your prior experience.
+
+i have no experience except like scratch in middle school. watched a 2 hour python video with common functions before the semester started, and i’m doing fine in 61a right now. honestly wouldn’t say i’m working any harder than most others.
+
+came into Berkeley with minimal programming experience (1 sem of python in high school) and I’ve been getting fked ever since
+
+Berkeley's crazy. You'll do great after college. In fact, you'll feel like a genius. It's hard to compare yourself to future professionals when you're only just beginning to learn.
+
+Had no experience except visual programming (making games in Scratch) in/before high school. Am now a grad student in CS lol.
+
+If you can’t be bothered to learn the basics of programming the summer before college it’s on you tbh.
+
+I didn’t have any experience until the summer before college and did just fine. IMO how well you do in classes (and even in a swe job after a couple months of adjustment / experience) has more to do with your ability in math than your prior experience.
+
+
+i have no experience except like scratch in middle school. watched a 2 hour python video with common functions before the semester started, and i’m doing fine in 61a right now. honestly wouldn’t say i’m working any harder than most others.

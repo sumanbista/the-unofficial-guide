@@ -1,0 +1,40 @@
+CS70 Professor Rao is the worst lecturer ever
+
+Every lecture with Professor Rao is him JUST READING the slides and hitting the next button over and over. Why can't he actually demonstrate it??? 
+Or maybe realize that he should WRITE OUT MATH PROBLEMS??? In what history of math classes have you seen professors presenting slideshows. 
+This ain't a history class. I have a feeling even he doesn't know how to do them. Anyone can stand there and read off of some slides. Clicking next over and over, simply reading the slides with no explanation on MATH proofs and saying "Okay?" "Does that make sense?" is NOT teaching.
+
+To past CS70 survivors, what's your advice? The notes are impossible to read and lectures are so useless. Do I stop going to lecture? Stop reading the notes? Help!!
+
+Other Reddit Responses on the thread: 
+That's basically the Rao experience.
+
+Even the advanced people who were excited to take CS 270 dropped his version of that course because nobody could understand what he was saying
+
+That's the class that taught me that going to lecture isn't always a productive use of time
+
+I never went to a even a single CS lecture in my entire time at Cal, didn't suffer for it at all. 
+
+He is a nice guy, but just terrible at teaching
+
+here's the issue. The value that comes from CS 70 only comes from the notes and practice problems. Too many people go into lecture not reading the notes. It's not his fault. If he just does practice problems, too many ppl would be clueless about whats going on. The only thing he can do is repeat the same stuff that y'all already have access too. if u want to change this, ppl have to collectively show that they alr know the notes. Too many people go into discussion a week after the material has already been covered and they still haven't read the notes. This is the Rao experience.
+
+But definitely agree with the sentiment of the post. Read the notes, do lots of practice, and self learn. You’ll be fine.
+
+idk I think it's going far better than Rao's lectures. It's just a bit bland/dry. I feel like I am actually learning the content.
+
+I watched this in high school before taking CS 70 and it was the only reason I followed that example when I was in CS 70
+
+Just be smart and read the notes. I took Cs70 and don’t even know how Rao looks
+
+I had the same sentiment in 70. Maybe i don’t have the best advised since I barely passed but I felt like I learned the important building blocks of the class in discussion and not lecture. I went to lecture and read the notes but tbh they kinda went over my head. Section and basically living in OH for a hours a day I think is how I got through it. That and CSM section.
+
+I thought Rao was quite good in CS 170 (outside of being a little boring). Does he not take questions during the lecture anymore?
+
+honestly i gave up on lecture halfway and just started going to section-- my gsi was super helpful and basically retaught the notes in section so that worked for me. ive heard folks go to csm also, though that also depends on mentor
+
+Going to discussion was huge for me in 70, my gsi was awesome and I learned more there than lecture. Also read the notes, they are really helpful. Keep reading them till they make sense.
+
+Also, go to office hours! I went literally every week to get help with the homework.
+
+Read the notes and make sure you understand everything, lecture was purely supplemental for me in that class lol

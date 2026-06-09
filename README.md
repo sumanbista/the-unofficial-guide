@@ -9,11 +9,13 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+**Chosen Domain**: Student reviews and unofficial advice about CS/EECS courses and professors at UC Berkeley.
 
+This system covers real student-generated knowledge about UC Berkeley’s Computer Science (CS) program — including professor teaching styles, course difficulty, workload, workload management tips, major declaration/switching experiences, and survival advice for classes like CS61A, CS61B, CS70, CS170, etc.
+
+**Why this knowledge is valuable**: Official course catalogs and university websites only provide dry descriptions (topics covered, prerequisites). They don’t tell students which professors are engaging vs. confusing, how brutal the workload actually is, whether a class is curved harshly, or how to succeed with no prior programming experience. This “unofficial” knowledge helps students make better scheduling decisions, reduce stress, and improve their academic experience.
+
+**Why it’s hard to find**: High-quality student insights are scattered across old Reddit threads (r/berkeley), RateMyProfessors pages, Medium posts, and Discord servers. They’re hard to search, often outdated, and mixed with noise. A RAG system makes this collective student wisdom searchable and reliable.
 ---
 
 ## Document Sources
@@ -22,18 +24,20 @@
      Be specific: include URLs, subreddit names, forum thread titles, or file names.
      Aim for variety — sources that together cover different subtopics or perspectives. -->
 
-| # | Source | Type | URL or file path |
+| # | Source/Type | Description | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | Rate My Professors|Best Rated RMP Professors| [Best Rated RMP Professors](https://www.ratemyprofessors.com/search/professors/1072?q=*&did=11)|
+| 2 | Rate My Professors| Low-rated CS professors and common complaints |[Low-rated CS professors](https://www.ratemyprofessors.com/search/professors/1072?q=*&did=11) |
+| 3 | Reddit|CS70 Professor Rao: |[Reddit Thread](https://www.reddit.com/r/berkeley/comments/1fvht2b/cs70_professor_rao_is_the_worst_lecturer_ever/)|
+| 4 |Reddit|CS Classes Ranked by Difficulty |[Reddit Thread](https://www.reddit.com/r/berkeley/comments/179uk2u/berkeley_cs_classes_ranked_by_difficulty/) |
+| 5 |Medium |CS vs EECS |[Medium] (https://carolynwangjy.medium.com/berkeley-cs-and-clarification-over-the-new-high-demand-major-policy-addd7ea76f89)|
+| 6 |Reddit| No Programming Experience |[Reddit Thread](https://www.reddit.com/r/berkeley/comments/118maog/what_percent_of_students_enter_berkeley_cseecs/) |
+| 7 |Reddit|Concerns about being CS at Berkeley |[Reddit Thread](https://www.reddit.com/r/berkeley/comments/uuhkod/concerns_about_being_cs_at_berkeley/)|
+| 8 | Medium | Switching Into CS | [Medium](https://carolynwangjy.medium.com/berkeley-cs-and-clarification-over-the-new-high-demand-major-policy-addd7ea76f89) |
+| 9 | Reddit | Switching Into CS | [Reddit Thread](https://www.reddit.com/r/ApplyingToCollege/comments/13car4d/admitted_to_berkeley_off_the_waitlist_can_i/) |
+| 10| Reddit | Switching Into CS | [Reddit Thread](https://www.reddit.com/r/berkeley/comments/181jhuq/how_hard_is_it_change_to_cs_major_after_getting/)|
+| 11 |Reddit|CS Classes Ranked by Difficulty | [Reddit Thread](https://www.reddit.com/r/berkeley/comments/179uk2u/berkeley_cs_classes_ranked_by_difficulty/)|
+| 12 |Reddit|How Hard and Time Consuming is CS at Berkeley | [Reddit Thread](https://www.reddit.com/r/berkeley/comments/hho2nr/comment/fwbmvvn/)|
 
 ---
 

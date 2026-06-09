@@ -1,0 +1,40 @@
+How time-consuming and hard is CS at Berekely?
+I wanted to ask about the average workload for computer science at UC Berkeley. I am a rising senior and I am very interested in AI and Machine Learning. After spending hours on other threads, I have gathered that CS is VERY challenging in the UC system (UCLA and UC Berkeley specifically) and I wanted to ask if this has also been your experience?
+
+From what I have read, many students are complaining about barely being able to maintain a 3.5 or 3.3 with an 80-hour workweek? Is this true? I have absolutely no problem putting in work for a good grade, but from what I have read, most students no matter how hard they work are struggling to get, as one poster put, "a 50% on the final or midterm."
+
+I am not sure if this matters much, but, in high school, I have taken Calc AB, AP CSP, and will be taking AP Computer Science A (Java), this year. Also, if anyone has any suggestions about doing computer science anywhere, not just UC Berkeley, please let me know. Without being able to tour schools or talk to my college counselor, I am finding the process of finding the right school and program very hard.
+
+
+Edit: I forgot to mention that I have also heard class sizes are enormous and the atmosphere is very "cutthroat," has this been your experience as well?
+
+Thread response:
+varies way too much from person to person for anyone's opinion to be useful to you. some people do have to grind 80 hour weeks for a 3.5 but that's definitely not typical. classes are huge but not really cutthroat.
+
+a 50% on the final or midterm" is often an A tho lol.
+Yeah, I have heard about the curving system. Does that happen right away, or are you hit with a 50% bomb, then later realize that it was curved up to an A?
+It’s not uncommon to walk out of exams having no idea if you aced it or failed it. You have to change your mindset - you probably won’t be able to solve every question like you could in hs. You can estimate how you did the moment scores are released because they show grade distributions, and if you’re in the top 20% or so it’ll be an A regardless of what the raw percentage is.
+
+Hard. But this opinion will vary.
+
+I've had people argue with me saying CS here isnt really that hard, but then they'll also mention how they competed and placed in all these prestigious high school math/science olympiads. Like personally, I didn't really have much resources or support growing up so I'm finding Berkeleye to be quite a challenge
+
+The CS major is very short at Berkeley. With only 6 lower divs (A,B,C,70,16A,16B) + 4 upper div electives + 1 design upper div elective, that's only 11 classes for the major total. If you take 4 classes / semester, you can finish it in 3 years no problem. If you take 3 classes / semester, you can finish it in 4 years without ever having an overloaded schedule. With that said, these classes can be very time consuming but you never have to "stack" them to finish on time.
+
+Hi there! I am currently doing lns cs at Cal taking the third class that I need to take to declare over the summer (CS70). While I don't know much about the CS70 since I just started, I can help talk about CS61A and CS61B, both of which I got an A in.
+
+CS61A with John Denero: Really well taught, but tests are difficult. The time commitment is manageable, but it depends on how much you study for the test. I'd recommend studying 1 week before, taking practice midterms from past years on alternate days and reviewing your mistakes/developing problem solving strategies/reviewing lecture and discussion notes on the other days you arent taking the practice midterms. That being said, you need to be really flexible as to how to use the tools you have learned in a clever and creative way to solve a problem. imo, that's what makes CS difficult, but fun. This class is meant to test your problem solving skills. I'd say the midterm averages hover around 65-75%, and do study for your midterms because they account for a sizable portion of your grade.
+
+CS61B with Hilfinger: Our 2020 spring semester cs61b was an anomaly since Hilfinger taught it and not Josh Hug, who usually teaches the spring semester. With Hilfinger, midterms and final aren't worth that much but the projects make or break your grade. The projects are super time intensive because they are large and difficult to complete, and this is where the immense time factor that you mentioned earlier comes in. But I actually prefer this, because you have more control over how well you do on your projects and once you understand what you are doing, the projects are super fun (especially gitlet and lines of action extra credit portion). Make sure to get all the points and extra credit points on the projects. I got below average on midterms and final and still ended up with an A in this class. Put in the work and get the grade.
+
+Now addressing more general concerns of yours, no the CS environment is not cutthroat. In fact, it is super collaborative and we have so many resources from GSIs to tutors. The discussion sections are really beneficial imo. The discussion sections lowkey saved my ass lol. Also, GSIs and professors have office hours all over the week, so you can drop by. In fact they beg us to drop by. I don't wanna sound pretentious but people claiming that CS at Berkeley is cutthroat probably don't use the resources at their disposal very well. CS at Cal is challenging, but imo getting that 3.3 GPA is doable. You might feel the competition, but only because others are trying to their best, but no one is actively trying to hurt your grade. Even CS70 is now is binned instead of curved.
+
+As a parting note, your experience in CS is initially gonna vary than that of your peers based on prior experience. All the APs that you mentioned, your comparative advantage from those classes disappears after week 3 of CS61A. So initially you might be more experienced, but pretty soon shit get complicated, and then everyone is equally confused lol. But you would expect a class to teach you something new, or else that class would be a waste of your valuable time at Cal. That being said, good luck!
+
+I think the difficulty depends entirely on your background coming into the major as well as your aptitude for the subject. If you have coded for a while, are coming in with a strong math background, and are used to the mental gymnastics you will encounter in classes like 61A or 170, you will find CS to be one of the easier STEM majors at Cal. If you have no experience coding and you are coming in with an average high school math background, you might struggle through some or all of your lower divisions. However, if you find that you have a knack for the material, it will get considerably easier very quickly (by definition, I suppose). As far as time is concerned, it’s pretty light except for maybe 61B or 70 depending on whom you take it with. You can choose all your upper division requirements so that is up to you.
+
+TLDR; Only you can tell
+
+Class sizes are huge, but you'll have a ton of resources and support at Berkeley.
+
+It will be time-consuming and hard, but that's true of anything that will be worth your time in college.
