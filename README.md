@@ -54,7 +54,7 @@ This system covers real student-generated knowledge about UC Berkeley’s Comput
 
 **Preprocessing before chunking:** Read each `.txt` file; detect type by delimiter (RMP files contain `Professor in the Computer Science department...`; Reddit files contain `Thread response:`). For RMP, segment by professor header, then by blank-line-separated reviews, retaining each professor's header as the prepended context. For Reddit, separate the main question (everything before `Thread response:`) from the replies (blank-line separated), and prepend the question to each reply chunk. Collapse extra whitespace; no HTML stripping is needed since the sources are already plain text.
 
-**Final chunk count:** ~60–80 chunks across all 9 documents (estimate — replace with the exact count after running the splitter).
+**Final chunk count:** 117 chunks total.
 
 ---
 
