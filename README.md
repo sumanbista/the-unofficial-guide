@@ -20,10 +20,6 @@ This system covers real student-generated knowledge about UC Berkeley’s Comput
 
 ## Document Sources
 
-<!-- List every source you collected documents from.
-     Be specific: include URLs, subreddit names, forum thread titles, or file names.
-     Aim for variety — sources that together cover different subtopics or perspectives. -->
-
 | # | Source/Type | Description | URL or file path |
 |---|--------|------|-----------------|
 | 1 | Rate My Professors|Best Rated RMP Professors| [Best Rated RMP Professors](https://www.ratemyprofessors.com/search/professors/1072?q=*&did=11)|
@@ -50,13 +46,15 @@ This system covers real student-generated knowledge about UC Berkeley’s Comput
      - Any preprocessing you did before chunking (e.g., stripping HTML, removing headers)
      - What your final chunk count was across all documents -->
 
-**Chunk size:**
+**Chunk size:** ~250–400 tokens (~1,000–1,600 characters) per chunk, using structure-aware boundaries rather than a fixed-length cut. The atomic unit is one review or one Reddit reply; short units are grouped (2–4 consecutive ones) up to the target size, and any single reply longer than ~400 tokens is sub-split at sentence boundaries.
 
-**Overlap:**
+**Overlap:** ~50 tokens (~1–2 sentences), applied *only* when a long reply has to be sub-split. The majority of chunks have **no overlap** because they end on natural blank-line boundaries between reviews/replies.
 
-**Why these choices fit your documents:**
+**Why these choices fit my documents:** The corpus is two document types, both with mixed-length content. (1) RateMyProfessor files are *collections*: several professors per file, each with a header (name, overall rating, % would-take-again, difficulty) followed by many short 1–3 sentence student reviews. (2) Reddit files each contain **one main thread question plus all of that thread's replies**, where replies range from a single line to ~250-word essays. A fixed 512-token chunk would splice two different opinions together and could separate a review from its professor header (or a reply from its question), producing chunks no one can attribute. Splitting on the documents' natural delimiters keeps each opinion intact, and prepending context (professor name/rating/course, or the thread question) makes every chunk self-contained and attributable. Small conditional overlap protects only the long essay-replies from mid-argument cuts. This avoids the failure modes at both extremes: too-small chunks return noisy, context-free fragments; too-large chunks (a full professor block or whole thread) average many opinions into one diluted embedding that scores "vaguely related" to everything.
 
-**Final chunk count:**
+**Preprocessing before chunking:** Read each `.txt` file; detect type by delimiter (RMP files contain `Professor in the Computer Science department...`; Reddit files contain `Thread response:`). For RMP, segment by professor header, then by blank-line-separated reviews, retaining each professor's header as the prepended context. For Reddit, separate the main question (everything before `Thread response:`) from the replies (blank-line separated), and prepend the question to each reply chunk. Collapse extra whitespace; no HTML stripping is needed since the sources are already plain text.
+
+**Final chunk count:** ~60–80 chunks across all 9 documents (estimate — replace with the exact count after running the splitter).
 
 ---
 
@@ -68,9 +66,15 @@ This system covers real student-generated knowledge about UC Berkeley’s Comput
      Consider: context length limits, multilingual support, accuracy on domain-specific text,
      latency, and local vs. API-hosted. -->
 
-**Model used:**
+**Model used:** `all-MiniLM-L6-v2` via the `sentence-transformers` library — a free, open-source embedding model that runs locally with no API key, no per-query cost, and full data privacy. It outputs 384-dimensional vectors, is fast on CPU, and performs well on short English semantic-similarity tasks, which matches our corpus of student reviews and Reddit replies. I chose it for the right cost/speed/quality balance for a small local RAG system. Note its **256 word-piece input limit**: it silently truncates longer inputs, so chunks are kept at/under ~256 tokens to ensure no text is lost before embedding. Retrieval uses **top-k = 5**, enough to gather several independent opinions for a consensus answer without diluting context with weakly-related chunks.
 
-**Production tradeoff reflection:**
+**Production tradeoff reflection:** If I were deploying for real users and cost weren't a constraint, I'd weigh:
+- **Accuracy on domain-specific text:** A larger model — `all-mpnet-base-v2` (768-dim, local) or an API model like OpenAI `text-embedding-3-large` / Voyage `voyage-3` — better captures nuance in slangy, sarcastic student language where MiniLM can miss intent. This is the biggest potential win.
+- **Context-length limits:** MiniLM's 256-token cap forces small chunks. A model with an 8K context (OpenAI/Voyage/`nomic-embed-text`) could embed a full professor block or long Reddit reply as one unit, removing truncation risk and simplifying chunking.
+- **Multilingual support:** Low priority here (English-only corpus), but `paraphrase-multilingual-mpnet` or Cohere `embed-multilingual-v3` would matter if non-English sources were added.
+- **Latency & local vs. API-hosted:** MiniLM is local — no network round-trip, no rate limits, no third-party data sharing, and zero marginal cost — with very low latency. An API-hosted model adds latency, per-call cost, and a privacy/availability dependency in exchange for higher accuracy and larger context.
+
+So, my first upgrade would be `all-mpnet-base-v2` locally (better accuracy while staying free and private), moving to an API-hosted model only if evaluation showed recall on nuanced queries was insufficient.
 
 ---
 
