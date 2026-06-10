@@ -56,6 +56,81 @@ This system covers real student-generated knowledge about UC Berkeley’s Comput
 
 **Final chunk count:** 117 chunks total.
 
+**Sample chunks:** Five representative chunks below (verbatim from the pipeline), spanning both document types. Each begins with its prepended attribution context so it is self-contained.
+
+**1. RMP review chunk** — source: `worst_rating_rmp.txt` (type: rmp, 156 tokens)
+```
+Professor Satish Rao (UC Berkeley CS) — 2.4/5 overall quality, 31% would take again, difficulty 4.2/5.
+
+CS70
+Apr 1st, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Grade: B
+Textbook: N/A
+Not recommended. Professor Rao's teaching style was difficult to follow, and he did not feel supportive when students needed help progressing in the course. Students should be cautious and clearly understand all course policies, as academic integrity concerns are taken very seriously with impersonations.
+
+CS70
+Oct 29th, 2025
+For Credit: Yes
+Attendance: Not Mandatory
+Grade: A-
+Textbook: Yes
+Super hard exams. Not bad of a guy (quite funny outside of class), but his teaching style is terrible. Made exams super difficult compared to past sem. But overall, meh
+Tough grader
+```
+
+**2. Short Reddit-reply chunk (multiple short replies grouped)** — source: `cs_70_professor_rao.txt` (type: thread, 190 tokens)
+```
+Thread: CS70 Professor Rao is the worst lecturer ever
+
+I thought Rao was quite good in CS 170 (outside of being a little boring). Does he not take questions during the lecture anymore?
+
+honestly i gave up on lecture halfway and just started going to section-- my gsi was super helpful and basically retaught the notes in section so that worked for me. ive heard folks go to csm also, though that also depends on mentor
+
+Going to discussion was huge for me in 70, my gsi was awesome and I learned more there than lecture. Also read the notes, they are really helpful. Keep reading them till they make sense.
+
+Also, go to office hours! I went literally every week to get help with the homework.
+
+Read the notes and make sure you understand everything, lecture was purely supplemental for me in that class lol
+```
+
+**3. Medium-article chunk** — source: `cs_vs_eecs.txt` (type: thread, 218 tokens)
+```
+Thread: UC Berkeley actually has two "computer science" majors — CS and EECS. Computer Science, the major formerly in the College of Letters & Sciences (hereby denoted as L&S) and recently moved to the new College of Data Science, Computing & Society (hereby denoted as CDSS) as of Spring 2024, consists of the CS curriculum with the breadth requirements of L&S. EECS, which stands for Electrical Engineering & Computer Science, is currently situated in the College of Engineering (hereby denoted as COE).
+
+Note that while the CS Major is technically now in the College of CDSS, it will also be referred to as the "L&S CS Major" throughout this article for consistency. To be extra clear, while the CS major still has the same breadth requirements as L&S majors, it is no longer housed in the College of L&S anymore.
+
+For prospective applicants, applying to the two majors, CS or EECS, is equivalent to applying to two separate majors in separate colleges on campus. Here are some differences:
+```
+
+**4. Multi-source file, correctly-attributed section** — source: `switch_into_cs.txt` (type: thread, 218 tokens) — this file concatenates three sources; this chunk is from its second section, so it carries the *waitlist Reddit thread* URL, not the file's lead (Medium) URL
+```
+Thread: ADMITTED TO BERKELEY OFF THE WAITLIST!! (Can I switch Majors?)
+
+ADMITTED TO BERKELEY OFF THE WAITLIST!! (Can I switch Majors?)
+Just got admitted to Berkeley off the Waitlist! Super stoked, definitely planning to attend...
+
+Admitted for Materials Science and Engineering in the Engineering School.
+
+Wanted to know what the process/ how hard it would be to change my major, either before fall 2023 starts or even after, to either computer science or into the Haas School of Business.
+
+If anyone has any insight or knowledge about this please let me know.
+
+For cs literally zero percent. Cs is a capped major meaning they will only accept students who indicated cs as their first choice during the admissions. So changing would be nearly impossible.
+
+Switching into CS is nearly impossible. In engineering school only Engineering Undeclared can switch into CS. But, maybe you can try to first switch into Engineering Undeclared? :
+
+Go if you want to stick with the major they gave you. Otherwise impossible to switch.
+```
+
+**5. Long single reply (near the 256-token cap)** — source: `concerns_cs_at_berkley.txt` (type: thread, 252 tokens)
+```
+Thread: Concerns about being CS at Berkeley
+
+Here's my take - I was quite lazy, didn't spend that much time on classes but was a slightly above average student my time here, mainly because as time went on, I knew what to do to get a decent grade. However when I was taking CS 70 as a freshman, I worked harder in that class than any other class before and to some extent after. But still nowhere close to 900 hours in a semester. I did average 12-15 hours per week mainly for psets, and there admittedly was one week that I said fuck it, I'm not doing the pset, which may or may not have hurt me since it was the week right after the first MT. For the week before the 2 MTs, maybe an additional 15 hours, and for RRR and for the 4.5 days leading up to the Final probably a total of 50 hours. And I did study right thru Spring Break as there was a MT2 right afterwards which I fucked up anyhow. So if I added up everything it was closer to 250-300 hours? for the semester.
+```
+
 ---
 
 ## Embedding Model
@@ -109,6 +184,85 @@ The model never sees the raw question alone. We retrieve the top-k = 5 chunks, f
 **How source attribution is surfaced in the response:**
 
 Sources are appended **programmatically**, not generated by the LLM — this prevents fabricated citations. After generation, we collect the `source`/`url` metadata from the chunks that were actually retrieved and de-duplicate them into a "Retrieved from" list shown beneath the answer (e.g. the RateMyProfessors, Reddit, or Medium links carried in each chunk's `url` field). Because attribution comes from the vector store's metadata rather than the model's text, a displayed citation always points to a real document that was actually fed into the prompt.
+
+**Example responses** (verbatim output from `ask()` in `query.py`):
+
+**Example 1 — in-corpus, with source attribution**
+```
+Q: What is the "Would Take Again" percentage for Professor Kannan Ramchandran?
+
+Answer:
+The "Would Take Again" percentage for Professor Kannan Ramchandran is 85%.
+
+Retrieved from:
+• Kannan Ramchandran — https://www.ratemyprofessors.com/search/professors/1072?q=*&did=11
+```
+
+**Example 2 — in-corpus, conflicting opinions preserved, with source attribution**
+```
+Q: What do students say about Professor Satish Rao's teaching?
+
+Answer:
+Students have varying opinions about Professor Satish Rao's teaching. Some students
+find his teaching style difficult to follow, saying he "reads off slides" with no
+explanation, and that his lectures are "incomprehensible" or "just him yapping
+throughout class." Others appreciate his emphasis on intuitive understanding and think
+his lectures are "pretty useful" in solidifying understanding. Some also describe him
+as "demeaning toward students," while others call him a "great and caring person" who
+"genuinely cares about his students." Overall, opinions are highly divided.
+
+Retrieved from:
+• Satish Rao — https://www.ratemyprofessors.com/search/professors/1072?q=*&did=11
+```
+
+**Example 3 — out-of-scope query, refusal (no fabricated answer, no sources)**
+```
+Q: Is Professor Alan Turing a good lecturer at Berkeley?
+
+Answer:
+I don't have enough information on that.
+
+Retrieved from:
+(none — the source list is suppressed on a refusal, since none of the retrieved
+chunks actually answered the question)
+```
+
+We have no documents about Alan Turing, so the top-k retrieval returns the closest *available* chunks (other professors' reviews), but the grounding instruction makes the model decline rather than fabricate a plausible answer from training knowledge — and the source list is suppressed so the refusal isn't paired with misleading citations.
+
+---
+
+## Query Interface
+
+The interface is a Gradio web app (`app.py`), launched with `python app.py` and served at `http://localhost:7860`. It wraps the end-to-end `ask()` function from `query.py`.
+
+**Input fields:**
+
+- **"Your question"** — a free-text box where the user types any question about UC Berkeley CS/EECS courses or professors. Pressing **Enter** submits it.
+- **Example question buttons** — the five Evaluation Plan questions are shown as clickable buttons directly under the input. Clicking one *fills the question box and runs the query in a single click* (no need to press Ask) — useful for a reviewer trying the system without typing.
+- **"Ask" button** — submits the typed question.
+
+**Output fields:**
+
+- **"Answer"** — the grounded, generated answer (an 8-line text area). If the corpus can't answer, this shows the refusal: *"I don't have enough information on that."*
+- **"Retrieved from"** — a bulleted list of the de-duplicated source documents the answer was drawn from, each as `<professor or thread title> — <url>` (a 4-line text area). This is built programmatically from chunk metadata and is left empty on a refusal.
+
+**Sample interaction transcript (one complete query and response):**
+
+```
+[User types into "Your question":]
+    What classes does Professor Jennifer Listgarten teach?
+
+[User presses Ask. The app calls ask(), which retrieves the top-5 chunks,
+ builds a grounded prompt, and calls the LLM. The two output fields populate:]
+
+Answer:
+    Professor Jennifer Listgarten teaches CS189.
+
+Retrieved from:
+    • Jennifer Listgarten — https://www.ratemyprofessors.com/search/professors/1072?q=*&did=11
+```
+
+The viewer can read the answer, see exactly which source document it came from, and click the link to verify it against the original RateMyProfessors page — all without any narration.
 
 ---
 
