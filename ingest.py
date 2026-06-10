@@ -42,6 +42,40 @@ TARGET_TOKENS = 230       # what we aim each grouped chunk to land near
 OVERLAP_TOKENS = 50       # carried between sub-splits of one long unit only
 TOKENS_PER_WORD = 1.3     # rough word->wordpiece inflation for English text
 
+# Original source URL for each document, from the Documents table in
+# planning.md. Attached to every chunk's metadata so the final answer can cite
+# a clickable source (an RMP/Reddit/Medium link) instead of a local filename.
+RMP_URL = "https://www.ratemyprofessors.com/search/professors/1072?q=*&did=11"
+MEDIUM_SWITCH_URL = "https://carolynwangjy.medium.com/berkeley-cs-and-clarification-over-the-new-high-demand-major-policy-addd7ea76f89"
+SOURCE_URLS = {
+    "best_rating_rmp.txt": RMP_URL,
+    "worst_rating_rmp.txt": RMP_URL,
+    "cs_70_professor_rao.txt": "https://www.reddit.com/r/berkeley/comments/1fvht2b/cs70_professor_rao_is_the_worst_lecturer_ever/",
+    "cs_classes_ranked_difficulty.txt": "https://www.reddit.com/r/berkeley/comments/179uk2u/berkeley_cs_classes_ranked_by_difficulty/",
+    "cs_vs_eecs.txt": MEDIUM_SWITCH_URL,
+    "no_programming_experience.txt": "https://www.reddit.com/r/berkeley/comments/118maog/what_percent_of_students_enter_berkeley_cseecs/",
+    "concerns_cs_at_berkley.txt": "https://www.reddit.com/r/berkeley/comments/uuhkod/concerns_about_being_cs_at_berkeley/",
+    "switch_into_cs.txt": MEDIUM_SWITCH_URL,  # lead source; see SWITCH_SECTIONS
+    "how_hard_cs.txt": "https://www.reddit.com/r/berkeley/comments/hho2nr/comment/fwbmvvn/",
+}
+
+# switch_into_cs.txt concatenates three distinct sources (rows 8-10 in
+# planning.md): a Medium article followed by two separate Reddit threads. We
+# split it on the markers that begin each section so every chunk cites the
+# correct URL. Each entry: (line-anchored boundary regex, source URL). The
+# first section runs from the start of the file to the first boundary.
+SWITCH_SECTIONS = [
+    (None, MEDIUM_SWITCH_URL),  # Medium article (file start → next boundary)
+    (
+        re.compile(r"^REDDIT QUESTION:", re.IGNORECASE | re.MULTILINE),
+        "https://www.reddit.com/r/ApplyingToCollege/comments/13car4d/admitted_to_berkeley_off_the_waitlist_can_i/",
+    ),
+    (
+        re.compile(r"^How hard is it change to CS Major", re.IGNORECASE | re.MULTILINE),
+        "https://www.reddit.com/r/berkeley/comments/181jhuq/how_hard_is_it_change_to_cs_major_after_getting/",
+    ),
+]
+
 # The RMP professor-header marker.
 RMP_MARKER = "Professor in the Computer Science department"
 
@@ -334,7 +368,9 @@ def chunk_documents(docs: list[dict]) -> list[dict]:
     for doc in docs:
         cleaned = clean_text(doc["text"])
         source = doc["source"]
-        if RMP_MARKER in cleaned:
+        if source == "switch_into_cs.txt":
+            doc_chunks = _chunk_multi_source(cleaned, source, SWITCH_SECTIONS)
+        elif RMP_MARKER in cleaned:
             doc_chunks = _chunk_rmp(cleaned, source)
         else:
             doc_chunks = _chunk_thread(cleaned, source)
@@ -342,8 +378,33 @@ def chunk_documents(docs: list[dict]) -> list[dict]:
         for i, ch in enumerate(doc_chunks):
             ch["metadata"]["chunk_index"] = i
             ch["metadata"]["chunk_id"] = f"{source}::{i}"
+            # per-section handlers set url already; fall back to the file map
+            ch["metadata"].setdefault("url", SOURCE_URLS.get(source, ""))
         all_chunks.extend(doc_chunks)
     return all_chunks
+
+
+def _chunk_multi_source(text: str, source: str, sections: list[tuple]) -> list[dict]:
+    """Split a file that concatenates several sources (switch_into_cs.txt) into
+    its sections on the given boundary markers, chunk each as a thread, and tag
+    every chunk with that section's URL so attribution is correct per chunk."""
+    # locate each section's start offset; section 0 starts at the file start
+    starts = [0]
+    for boundary, _url in sections[1:]:
+        m = boundary.search(text)
+        starts.append(m.start() if m else len(text))
+
+    doc_chunks: list[dict] = []
+    for idx, (_boundary, url) in enumerate(sections):
+        start = starts[idx]
+        end = starts[idx + 1] if idx + 1 < len(starts) else len(text)
+        segment = text[start:end].strip()
+        if not segment:
+            continue
+        for ch in _chunk_thread(segment, source):
+            ch["metadata"]["url"] = url
+            doc_chunks.append(ch)
+    return doc_chunks
 
 
 # --------------------------------------------------------------------------- #
